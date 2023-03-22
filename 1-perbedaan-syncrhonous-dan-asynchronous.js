@@ -1,0 +1,2 @@
+// Synchronous merupakan pemrograman yang pengeksekusian baris program satu-persatu secara hirarki atau bertype blocking, dimana proses program selanjutnya akan dijalankan sebelum proses sebelumnya telah selesai.
+// asynchronous merupakan pemrograman yang pengeksekusian non blocking, artinya setiap proses bisa dijalankan tanpa menunggu proses yang sedang berjalan.
