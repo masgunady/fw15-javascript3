@@ -8,20 +8,16 @@ const cekHariKerja = (day) => {
             if (cek) {
                 resolve(cek)
             } else {
-                reject(new Error(`hari ${day} bukan hari kerja`))
+                reject(new Error(`hari ini bukan hari kerja`))
             }
-        }, 1000)
+        }, 3000)
     })
 }
 
-
-async function getData() {
-    try {
-        const result = await cekHariKerja('minggu');
+cekHariKerja('senin')
+    .then((result) => {
         console.log(`${result} adalah hari kerja`)
-    } catch (err) {
-        console.log(err);
-    }
-}
-
-getData();
+    })
+    .catch((error) => {
+        console.log(error)
+    })
