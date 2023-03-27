@@ -40,7 +40,7 @@ const getMonth = (callback) => {
 //     }
 // })
 
-//code menggunakan arrow function atau anonymous function
+//code menggunakan anonymous arrow function
 getMonth((error, month) => {
     if (error) {
         console.log(error.message);

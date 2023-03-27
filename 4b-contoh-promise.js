@@ -1,8 +1,10 @@
 function searchName(querySearch, limitSearch) {
     return new Promise((resolve, reject) => {
         const name = ["Abigail", "Alexandra", "Alison", "Amanda", "Angela", "Bella", "Carol", "Caroline", "Carolyn", "Deirdre", "Diana", "Elizabeth", "Ella", "Faith", "Olivia", "Penelope"];
-        const queryRegExp = new RegExp(querySearch, 'ig');
-        const searchName = name.filter(x => x.match(queryRegExp));
+
+        // menggunakan regex-> const queryRegExp = new RegExp(querySearch, 'ig');
+        // const searchName = name.filter(x => x.match(queryRegExp));
+        const searchName = name.filter(x => x.toLowerCase().includes(querySearch));
         const displayLimit = searchName.filter((x, y) => y < limitSearch);
 
         if (displayLimit.length >= 1) {
@@ -24,4 +26,4 @@ async function getSearchData(query, limit) {
     }
 }
 
-getSearchData('a', 3)
+getSearchData('an', 3)

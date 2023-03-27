@@ -9,7 +9,7 @@ function cekGenap(number) {
     })
 }
 
-cekGenap(5)
+cekGenap(6)
     .then((result) => {
         console.log(`${result} adalah angka genap`);
     })
