@@ -16,10 +16,15 @@ const cekHariKerja = (day) => {
 
 
 async function getData() {
+    // jika menggunakan try catch maka kita membuat sebuah async function
+    // dilanjut dengan penulisan try untuk enangani resolve dari promise
+    // didalam try terdapat const await yang akan dijalankan ketika prosesnya selesai
     try {
+        //try akan menangani resolve dr promise ketika kita menuliskan await cekHariKerja('senin)
         const result = await cekHariKerja('senin');
         console.log(`${result} adalah hari kerja`)
     } catch (err) {
+        // catch akan menangani error atau reject dari sebuah promise
         console.log(err.message);
     }
 }
