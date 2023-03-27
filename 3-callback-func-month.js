@@ -16,16 +16,16 @@ const getMonth = (callback) => {
 
 // kode jika function declaration
 
-// function showMonth(error, month) {
-//     if (error) {
-//         console.log(error.message);
-//     } else {
-//         const months = month.map((x) => x);
-//         console.log(months);
-//     }
-// }
+function showMonth(error, month) {
+    if (error) {
+        console.log(error.message);
+    } else {
+        const months = month.map((x) => x);
+        console.log(months);
+    }
+}
 
-// getMonth(showMonth);
+getMonth(showMonth);
 
 
 
@@ -41,11 +41,11 @@ const getMonth = (callback) => {
 // })
 
 //code menggunakan arrow function atau anonymous function
-getMonth((error, month) => {
-    if (error) {
-        console.log(error.message);
-    } else {
-        const months = month.map((x) => x);
-        console.log(months);
-    }
-})
+// getMonth((error, month) => {
+//     if (error) {
+//         console.log(error.message);
+//     } else {
+//         const months = month.map((x) => x);
+//         console.log(months);
+//     }
+// })
